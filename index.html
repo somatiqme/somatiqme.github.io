@@ -178,6 +178,18 @@ a.who{color:inherit;text-decoration:none}
 .foot{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--rose);padding-top:22px;font-family:var(--f-label);font-size:.9rem;color:var(--ink-soft)}
 .foot a{color:var(--plum)}
 .foot nav{display:flex;flex-wrap:wrap;gap:8px 18px}
+.foot .req{font-size:.82rem;line-height:1.5}
+/* legal documents */
+.doc{display:flex;flex-direction:column;gap:14px;font-size:1rem;line-height:1.6}
+.doc h1{font-size:clamp(1.9rem,6vw,2.6rem);margin-bottom:6px}
+.doc h2{font-size:1.4rem;margin-top:22px}
+.doc p,.doc li{color:var(--ink)}
+.doc ol,.doc ul{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:6px}
+mark{background:none;color:inherit}
+.doc .muted{color:var(--ink-soft);font-size:.92rem}
+.doc table{border-collapse:collapse;width:100%;font-size:.95rem}
+.doc td{border-top:1px solid var(--line);padding:8px 8px 8px 0;vertical-align:top}
+.doc td:first-child{color:var(--ink-soft);width:38%}
 
 @media (min-width:640px){.btns{flex-direction:row}.btns .btn{flex:1}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -289,7 +301,12 @@ a.who{color:inherit;text-decoration:none}
       <a href="/individual">Индивидуальная работа</a>
     </nav>
     <p>Вопросы: <a href="mailto:mkarnovich@gmail.com">mkarnovich@gmail.com</a> · телеграм <a href="https://t.me/nyashmash" target="_blank" rel="noopener">@nyashmash</a> · канал <a href="https://t.me/somatiqme" target="_blank" rel="noopener">@somatiqme</a></p>
-    <!-- TODO перед подключением эквайринга: реквизиты ИП (ФИО, ИНН, ОГРНИП) + ссылки на /oferta и /privacy -->
+    <p class="req">ИП Карнович-Валуа Мария Викторовна · ИНН 773370716165 · ОГРНИП 326774600596818 · г. Москва · <a href="mailto:mkarnovich@gmail.com">mkarnovich@gmail.com</a></p>
+    <nav aria-label="Документы">
+      <a href="/oferta">Договор-оферта</a>
+      <a href="/privacy">Политика обработки персональных данных</a>
+      <a href="/soglasie">Согласие на обработку персональных данных</a>
+    </nav>
   </footer>
 </div>
 

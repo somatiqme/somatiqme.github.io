@@ -163,6 +163,32 @@ ul.list li::before{content:"";position:absolute;left:2px;top:22px;width:9px;heig
 
 @media (min-width:640px){.btns{flex-direction:row}.btns .btn{flex:1}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* --- added 11.2026: hub page, product cards, footer --- */
+a.who{color:inherit;text-decoration:none}
+.offers{display:flex;flex-direction:column;gap:16px}
+.offer{gap:12px}
+.offer h3{font-size:1.5rem}
+.offer .price{font-size:1.7rem}
+.offer .btn{align-self:flex-start;margin-top:6px}
+.offer .btn-dark{margin-top:6px}
+.tier.first .label,.tier.second .label,.tier.third .label{color:var(--ink)}
+.badge{display:inline-block;align-self:flex-start;font-family:var(--f-label);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--bg);border-radius:999px;padding:4px 10px}
+.foot{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--rose);padding-top:22px;font-family:var(--f-label);font-size:.9rem;color:var(--ink-soft)}
+.foot a{color:var(--plum)}
+.foot nav{display:flex;flex-wrap:wrap;gap:8px 18px}
+.foot .req{font-size:.82rem;line-height:1.5}
+/* legal documents */
+.doc{display:flex;flex-direction:column;gap:14px;font-size:1rem;line-height:1.6}
+.doc h1{font-size:clamp(1.9rem,6vw,2.6rem);margin-bottom:6px}
+.doc h2{font-size:1.4rem;margin-top:22px}
+.doc p,.doc li{color:var(--ink)}
+.doc ol,.doc ul{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:6px}
+mark{background:none;color:inherit}
+.doc .muted{color:var(--ink-soft);font-size:.92rem}
+.doc table{border-collapse:collapse;width:100%;font-size:.95rem}
+.doc td{border-top:1px solid var(--line);padding:8px 8px 8px 0;vertical-align:top}
+.doc td:first-child{color:var(--ink-soft);width:38%}
+
 </style>
 </head>
 <body>
@@ -224,6 +250,22 @@ ul.list li::before{content:"";position:absolute;left:2px;top:22px;width:9px;heig
     <a class="btn btn-main" href="https://tally.so/r/7XbDBZ" target="_blank" rel="noopener">Записаться на практикум →</a>
     <p class="note">Хотите работать индивидуально? <a class="ext" href="/individual">Программа индивидуальных сессий →</a></p>
   </section>
+
+  <footer class="foot">
+    <nav aria-label="Разделы сайта">
+      <a href="/">Главная</a>
+      <a href="/praktikum">Онлайн-практикум</a>
+      <a href="/zapis">Практикум в записи</a>
+      <a href="/individual">Индивидуальная работа</a>
+    </nav>
+    <p>Вопросы: <a href="mailto:mkarnovich@gmail.com">mkarnovich@gmail.com</a> · телеграм <a href="https://t.me/nyashmash" target="_blank" rel="noopener">@nyashmash</a> · канал <a href="https://t.me/somatiqme" target="_blank" rel="noopener">@somatiqme</a></p>
+    <p class="req">ИП Карнович-Валуа Мария Викторовна · ИНН 773370716165 · ОГРНИП 326774600596818 · г. Москва · <a href="mailto:mkarnovich@gmail.com">mkarnovich@gmail.com</a></p>
+    <nav aria-label="Документы">
+      <a href="/oferta">Договор-оферта</a>
+      <a href="/privacy">Политика обработки персональных данных</a>
+      <a href="/soglasie">Согласие на обработку персональных данных</a>
+    </nav>
+  </footer>
 </div>
 
 <div class="sticky"><a class="btn" href="https://tally.so/r/7XbDBZ" target="_blank" rel="noopener">Записаться →</a></div>
